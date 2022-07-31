@@ -1,0 +1,85 @@
+.transition{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items : center;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color : var(--secondary);
+}
+.swipe-up,
+.swipe-left,
+.swipe-right,
+.swipe-down {
+    position: fixed;
+    background-color: var(--primary);
+    z-index: 101;
+    transition: .5s ease-out;
+}
+
+.swipe-up {
+    height: 100%;
+    bottom : 100%;
+    right: 0;
+    left: 0;
+
+}
+
+.swipe-up.is-active {
+    bottom: 0px;
+}
+
+.animate{
+    opacity: 0;
+}
+.load-animated{
+    opacity: 0;
+}
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeLeft {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }   
+}
+@keyframes fadeRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .transition{
+        padding: 0px 8vw;
+        font-size: 20px;
+        text-align: center;
+    }
+}
