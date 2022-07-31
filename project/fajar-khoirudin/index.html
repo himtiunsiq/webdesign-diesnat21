@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>Dies Natalis Poject</title>
+    <style>
+        *{margin:0; padding:0;}
+        
+        .bg-img{
+            background-image:url(img/bg1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        header {
+            width: 100%;
+            height: 5%;
+        }
+        nav {
+            float: right;
+            width: 50%;
+            margin-right: 45px;
+            margin-top: 35px;
+        }
+        header nav ul {
+            list-style: none;
+            float: right;
+        }
+        nav ul li {
+            float: left;
+            color: #FFFFFF;
+            font-size: 16px;
+            text-align: center;
+            margin-right: 25px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        ul li:hover a {
+            color: #26d0c9;
+        }
+        
+        menu{
+            width: 100%;
+            height:auto;
+        }
+        .himti h2{
+            text-align:right;
+            margin-top: 120px;
+            margin-right: 120px;
+            font-size: 50px;
+            color: #fff;
+            cursor:default;
+        }
+        .moto ul{
+            margin-top: 20px;
+        }
+        .moto ul li{
+            text-align:right;
+            margin-top: 10px;
+            margin-right: 120px;
+            font-size: 25px;
+            color: #fff;
+            list-style-type:none;
+            cursor: default;
+        }
+        
+        .klik{
+            background-color: #ff7f00;
+            border-radius: 10px;
+            border: 0px;
+            height: 27px;
+            width: 105px;
+            color: white;
+        }
+        .klik:hover{
+            cursor:pointer;
+            height:25px;
+            width:100px;
+            background-color: #16A085;
+			font-size:13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="profil.html">PROFIL</a></li>
+                    <li><a href="pengurus.html">KEPENGURUSAN</a></li>
+                    <li><a href="proker.html">PROKER</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <menu>
+            <div class="himti">
+                <h2>HIMTI</h2>
+            </div>
+            <div class="moto">
+                <ul>
+                    <li>Teknik Informatika!</li>
+                    <li>Kita keluarga!</li>
+                    <li>Kita Berkarya!</li>
+                    <li>Jaya Jaya Jaya!</li>
+                </ul>
+            </div>
+            	<table style="margin-left:auto; margin-right:auto; margin-top:60px;">
+                	<tr align="center">
+                    	<td colspan="3" style="color:#fff">
+                        	<div id="clock"></div>
+                        	<script>
+								setInterval(() => {
+									let date = new Date()
+									let clock = document.getElementById('clock')
+									clock.innerHTML =
+										date.getHours()+":"+
+										date.getMinutes()+":"+
+										date.getSeconds()
+								}, 1000)
+							</script><br>
+                        </td>
+                    </tr>
+                	<tr align="center">
+                    	<td><img src="img/lgunsiq.png" style="height:60px"></td>
+                    	<td><img src="img/lgfastikom.png" style="height:62px"></td>
+                    	<td><img src="img/lghimti.png" style="height:58px"></td>
+                    </tr>
+                    <tr>
+                    	<td colspan="3"><p style="text-align:center; color:#999; margin-top:15px"><i>"Upgrade your skill to build modern website"</i></p></td>
+					</tr>
+                    <tr>
+                    	<td colspan="3"><p style="text-align:center; margin-top:5px"><a href="biodata.html" onClick="return confirm('Ketuk area boidata untuk kembali')"><input class="klik" type="button" value="Laman Peserta"></a></p></td>
+					</tr>
+                </table>
+        
+        </menu>
+    </div>
+</body>
+</html>
