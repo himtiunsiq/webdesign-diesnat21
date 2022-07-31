@@ -1,0 +1,632 @@
+.container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+
+}
+
+@media (max-width: 600px) {
+  .container h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+  }
+}
+
+/* ============== header =================== */
+header {
+  background-image: url('../media/bg.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+header .container {
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+header .headertext {
+  width: 50%;
+}
+
+header .headertext h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 47px;
+  width: 574px;
+  left: 95px;
+  top: 231.98px;
+  font-family: 'Rubik bold';
+}
+
+header .headertext p {
+  width: 439px;
+  left: 95px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #A3A3A3;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+header .gambarheader {
+  width: 50%;
+  height: 330px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../media/1658969465-picsay.png');
+
+}
+
+header .tombolheader {
+  display: flex;
+  flex-direction: row;
+}
+
+header .tombolheader a {
+  margin: 0px 10px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    height: 85%;
+    margin-top: -7vh;
+    flex-direction: column-reverse;
+
+  }
+
+  header {
+    background-image: none;
+  }
+
+  header .headertext h1 {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+
+    left: 95px;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Rubik bold';
+  }
+
+  header .headertext p {
+    width: auto;
+    text-align: center;
+    left: 95px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #A3A3A3;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  header .headertext {
+    width: 90%;
+  }
+
+  header .gambarheader {
+    width: 70%;
+    height: 270px;
+  }
+
+  header .tombolheader {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  header .tombolheader a {
+    margin: 10px 0px;
+  }
+}
+
+/* ====================================== Event's ================== */
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.event .card {
+  width: 288.9px;
+  margin: 30px 20px 0px 20px;
+}
+
+.event .card .img {
+  margin-bottom: 15px;
+  height: 165.05px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.event .card span {
+  color: #636363;
+  font-size: small;
+  margin-left: 5px;
+}
+
+.event .card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 8px 0px;
+  transition: 0.2s;
+}
+
+.event .card a {
+  text-decoration: none;
+}
+
+.event .card a h4:hover {
+  color: #00be98;
+}
+
+.event .card p {
+  margin-top: 0px;
+  font-size: 15px;
+  color: #8C8C8C;
+}
+
+.event .card p a {
+  color: #00be98;
+}
+
+@media (max-width: 600px) {
+  .event .card {
+    text-align: center;
+  }
+
+  .container .jdlevent {
+    margin-top: 1rem;
+  }
+}
+
+/* ================================= Program Kerja ===============================*/
+
+.container .tahunproja {
+  text-align: center;
+  font-size: 22px;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+  color: #00be98;
+
+}
+
+.proja {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.proja .card {
+  margin: 15px;
+  width: 228.9px;
+  background-color: #1B1B1B;
+  padding: 10px 8px 8px 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.proja .card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.proja .card .img {
+  width: 42px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 42px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  background-color: #00be98;
+}
+
+.proja .card span {
+  color: #636363;
+  font-size: small;
+  margin-left: 5px;
+}
+
+.proja .card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0px;
+  transition: 0.2s;
+}
+
+.proja .card p {
+  margin-top: 0px;
+  font-size: 15px;
+  color: #8C8C8C;
+}
+
+/* ==================== Visi Misi ================= */
+
+.visimisi {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rem;
+  justify-content: space-evenly;
+}
+
+.visimisi .img {
+  border-radius: 15px;
+  width: 304px;
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.textvisimisi {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.textvisimisi h4 {
+  text-align: left;
+  font-size: 35px;
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-left: -10px;
+}
+
+.textvisimisi p {
+  margin-bottom: 30px;
+  color: #c6c6c6;
+}
+
+.textvisimisi {
+  text-align: left;
+}
+
+.visimisi .misi {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  align-items: center;
+
+}
+
+.visimisi .misi .isi {
+  color: #c6c6c6;
+
+}
+
+.misi .no {
+  padding: 10px 17px;
+  margin-right: 16px;
+  border-radius: 8px;
+  background-color: #00be98;
+  font-weight: bold;
+  color: #1B1B1B;
+}
+
+@media (max-width: 600px) {
+  .visimisi {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+
+  }
+
+  .visimisi .img {
+    display: none;
+  }
+
+  .textvisimisi {
+    width: 90%;
+    margin: auto;
+  }
+
+  .textvisimisi h4 {
+    text-align: center;
+  }
+
+  .textvisimisi p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .visimisi .misi {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+
+  }
+
+  .misi .no {
+    margin-bottom: 10px;
+  }
+}
+
+/* ==================== funfact  ===================== */
+
+.funfact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #00be98;
+  padding: 28px 0px;
+  border-radius: 45px;
+  font-family: 'Rubik bold';
+
+}
+
+.fact .angka {
+  color: #1B1B1B;
+  font-size: 60px;
+  margin: 0px 60px;
+  font-weight: bolder;
+}
+
+.fact .ket {
+  color: #1B1B1B;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .funfact {
+    margin-top: 5rem;
+    flex-direction: column;
+
+  }
+
+  .fact .angka {
+    margin: 10px 60px 0px 60px;
+  }
+
+  .fact .ket {
+    margin-bottom: 30px;
+  }
+}
+
+/* ====================== Event =================================== */
+.eventt {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.eventnya {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+  margin: 5rem 0px;
+
+}
+
+.eventnya .eventnyatext {
+  width: 50%;
+}
+
+.eventnya .eventnyatext span {
+  color: #636363;
+  font-size: 15px;
+}
+
+.eventnya .eventnyatext h1 {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 47px;
+  width: 434px;
+  left: 95px;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: 'Rubik bold';
+}
+
+.eventnya .eventnyatext p {
+  width: 409px;
+  left: 95px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #A3A3A3;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.eventnya .gambareventnya {
+  margin-right: 30px;
+  width: 50%;
+  height: 290px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.eventnya .tomboleventnya {
+  display: flex;
+  flex-direction: row;
+}
+
+.eventnya .tomboleventnya a {
+  margin: 0px 10px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .eventnya {
+    flex-direction: column-reverse;
+
+  }
+
+  .eventnya .gambareventnya {
+    width: 100%;
+    margin: 10px auto;
+    height: 200px;
+  }
+
+  .eventnya .eventnyatext {
+    width: 100%;
+  }
+
+  .eventnya .eventnyatext span {
+    display: none;
+  }
+
+  .eventnya .eventnyatext h1 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .eventnya .eventnyatext p {
+    width: auto;
+    left: 95px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .eventnya .tomboleventnya {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .eventnya .tomboleventnya a {
+    margin-top: 15px;
+  }
+}
+
+/* event 2 */
+.eventnya2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: left;
+  margin: 5rem 0px 7rem 0px;
+
+}
+
+.eventnya2 .eventnyatext {
+  width: 50%;
+}
+
+.eventnya2 .eventnyatext span {
+  color: #636363;
+  font-size: 15px;
+}
+
+.eventnya2 .eventnyatext h1 {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 47px;
+  width: 434px;
+  left: 95px;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-family: 'Rubik bold';
+}
+
+.eventnya2 .eventnyatext p {
+  width: 409px;
+  left: 95px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #A3A3A3;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.eventnya2 .gambareventnya {
+  margin-right: 30px;
+  width: 50%;
+  height: 290px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.eventnya2 .tomboleventnya {
+  display: flex;
+  flex-direction: row;
+}
+
+.eventnya2 .tomboleventnya a {
+  margin: 0px 10px 0px 5px;
+}
+
+@media (max-width: 600px) {
+  .eventnya2 {
+    flex-direction: column-reverse;
+
+  }
+
+  .eventnya2 .gambareventnya {
+    width: 100%;
+    margin: 10px auto;
+    height: 200px;
+  }
+
+  .eventnya2 .eventnyatext {
+    width: 100%;
+  }
+
+  .eventnya2 .eventnyatext span {
+    display: none;
+  }
+
+  .eventnya2 .eventnyatext h1 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .eventnya2 .eventnyatext p {
+    width: auto;
+    left: 95px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .eventnya2 .tomboleventnya {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .eventnya2 .tomboleventnya a {
+    margin-top: 15px;
+  }
+}

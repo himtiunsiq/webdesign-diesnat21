@@ -1,0 +1,450 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #060606;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+div {
+  color: rgb(255, 255, 255);
+}
+
+span {
+  color: #00be98;
+}
+
+a:hover {
+  color: #006853;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+@font-face {
+  font-family: 'Rubik medium';
+  src: url('../media/Circular\ Font\ Family/ProductSans-Regular.ttf');
+  
+}
+
+@font-face {
+  font-family: 'Rubik bold';
+  src: url('../media/Rubik/static/Rubik-Bold.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik bold';
+
+}
+
+body {
+  margin: 0px;
+  font-family: 'Rubik medium';
+}
+
+/* ==== global ==== */
+.container {
+  width: 85%;
+  margin: auto;
+
+}
+
+.btn {
+  background-color: #00be98;
+  padding: 9px 50px;
+  border-radius: 200px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #00be98;
+}
+
+.btn:hover {
+  border: 2px solid #009174;
+  background-color: #009174;
+  color: black;
+}
+
+
+.btn-putih {
+  background-color: #ffffff;
+  padding: 9px 50px;
+  border-radius: 200px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #ffffff;
+}
+
+.btn-putih:hover {
+  border: 2px solid #ffffff;
+  background-color: #fbfbfb;
+  color: black;
+}
+
+
+
+.btn-b {
+  background-color: #00be9800;
+  border: 2px solid #ffffff;
+  padding: 9px 50px;
+  border-radius: 200px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-b:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: black;
+}
+
+/* =================== Back to top ======================= */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00be98;
+  color: white;
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 600px) {
+  #myBtn {
+    padding: 11px;
+    border: 1px solid #00af8c;
+  }
+}
+
+/* ======================= nav =============== */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #14141400;
+  position: relative;
+  padding: 20px 50px;
+
+}
+
+.nav>.nav-header {
+  display: inline;
+
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.tombol {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-left: 190px;
+
+}
+
+.nav>.nav-links>a>.tombol {
+  display: none;
+}
+
+.nav>.tombol>a>button {
+  border: #00be98 solid 2px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  margin-top: -10px;
+  color: rgb(39, 32, 32);
+  font-weight: bold;
+  background-color: #00be98;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 17px;
+
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav>.nav-links>.active {
+  color: #00be98;
+}
+
+.nav>.nav-links>a:hover {
+  color: #006853;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0px 0px;
+  }
+
+  .nav>.nav-links>a>.tombol {
+    border: #00be98 solid 2px;
+    padding: 6px 50px;
+    border-radius: 50px;
+    margin-top: -10px;
+    color: rgb(39, 32, 32);
+    font-weight: bold;
+    background-color: #00be98;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+  }
+
+  .nav>.tombol>a>button {
+    display: none;
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+
+/* ====================== footer ================ */
+footer {
+  margin: auto;
+  text-align: center;
+  color: #B1B1B1;
+}
+
+footer ul {
+  margin: 40px auto;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+  padding: 0px 25px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+footer .alamat {
+  font-size: 15px;
+  margin: 10px auto;
+  color: #B1B1B1;
+}
+
+footer .copyright {
+  border-top: 0.5px solid rgb(156, 156, 156);
+  width: 100%;
+  margin: auto;
+  padding: 5px 0px;
+  font-size: 15px;
+
+}
+
+footer .copyright small {
+  color: #B1B1B1;
+
+}
+
+footer .copyright a {
+  color: #00be98;
+
+}
+
+footer ul li div {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+footer ul li .sosmed1 {
+  background-image: url('../media/icon/icons8-twitter-49.png');
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+footer ul li .sosmed1:hover {
+  background-image: url('../media/icon/icons8-twitter-48.png');
+}
+
+footer ul li .sosmed2 {
+  background-image: url('../media/icon/icons8-instagram-49.png');
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+footer ul li .sosmed2:hover {
+  background-image: url('../media/icon/icons8-instagram-48.png');
+}
+
+footer ul li .sosmed3 {
+  background-image: url('../media/icon/icons8-whatsapp-49.png');
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+footer ul li .sosmed3:hover {
+  background-image: url('../media/icon/icons8-whatsapp-48.png');
+}
+
+footer ul li .sosmed4 {
+  background-image: url('../media/icon/icons8-youtube-49.png');
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+footer ul li .sosmed4:hover {
+  background-image: url('../media/icon/icons8-youtube-48.png');
+}
+
+@media (max-width: 600px) {
+
+  footer ul li div {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer ul {
+    margin: 25px auto 25px -14%;
+  }
+
+  footer ul li {
+    padding: 0px 5px;
+  }
+
+  footer ul a {
+    font-size: 11px;
+  }
+
+  footer .alamat {
+    font-size: 11px;
+  }
+
+  footer .copyright {
+    border-top: 0.5px solid rgb(156, 156, 156);
+    width: 75%;
+    margin: auto;
+    padding: 5px 0px;
+    font-size: 11px;
+
+  }
+
+  footer .copyright small {
+    color: #B1B1B1;
+
+  }
+
+  footer .copyright a {
+    color: #00be98;
+
+  }
+}

@@ -1,0 +1,380 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+
+}
+
+p,
+span,
+small,
+div {
+  color: rgb(30, 30, 30);
+  font-family: 'circular';
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'circular-M';
+  color: rgb(30, 30, 30);
+
+}
+@font-face {
+  font-family: 'circular-M';
+  src: url('../media/Circular\ Font\ Family/ProductSans-Medium.ttf');
+}
+@font-face {
+  font-family: 'circular';
+  src: url('../media/Circular\ Font\ Family/ProductSans-Regular.ttf');
+}
+header h1 {
+  font-size: 60px;
+}
+
+.btn {
+  background-color: #00A986;
+  padding: 10px 50px;
+  border-radius: 200px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #00A986;
+}
+
+.btn:hover {
+  border: 2px solid #009174;
+  background-color: #009174;
+  color: white;
+}
+
+.btn-b {
+  background-color: #00be9800;
+  border: 2px solid #101010;
+  padding: 10px 50px;
+  border-radius: 200px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #101010;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-b:hover {
+  border: 2px solid #101010;
+  background-color: #101010;
+  color: rgb(255, 255, 255);
+}
+
+.btn,
+.btn-b {
+  margin-right: 10px;
+}
+
+/* ================================= Header ============================= */
+
+header .container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+
+
+}
+
+header .textnya {
+  padding-left: 0rem;
+  margin-top: -30px;
+}
+
+header .textnya h1 {
+  padding-bottom: 3rem;
+}
+
+header .container img {
+  margin-top: 60px;
+  width: 400px;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  header .container img {
+    margin-top: 0px;
+    width: 320px;
+    margin: 0rem auto 0px auto;
+
+  }
+
+  header .textnya {
+    padding-left: 0rem;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  header .textnya h1 {
+    padding: 2rem 0px 2rem 0px;
+    font-size: 33px;
+  }
+
+  header .textnya a {
+    margin-bottom: 0.5rem;
+  }
+
+  header .textnya .tombol {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* ijo */
+.ijo {
+  background-color: #00A986;
+  padding: 4rem 0px 6rem 0px;
+}
+
+.ijo h2 {
+  color: white;
+  font-size: 50px;
+  padding-bottom: 30px;
+
+}
+
+.ijo p {
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  .ijo h2 {
+    font-size: 30px;
+  }
+
+  .ijo p {
+    font-size: 18px;
+    ;
+  }
+}
+
+/* hitam */
+.hitam {
+  background-color: #0d0d0d;
+  padding: 4rem 0px 2rem 0px;
+  text-align: center;
+}
+
+.hitam h2 {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 30px;
+
+}
+
+.hitam p {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 60px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .hitam {
+    text-align: left;
+  }
+
+  .hitam h2 {
+    font-size: 28px;
+  }
+
+  .hitam p {
+    font-size: 18px;
+    ;
+  }
+
+  .hitam a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* putih */
+.putih {
+  background-color: #ffffff;
+  padding: 4rem 0px 6rem 0px;
+  text-align: center;
+}
+
+.putih .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.putih h2 {
+  color: #0d0d0d;
+  font-size: 40px;
+  padding-bottom: 4rem;
+}
+
+.putih .cards .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+
+}
+
+.putih .icon {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.putih p {
+  color: #0d0d0d;
+  margin-bottom: 10px;
+  margin-top: 40px;
+
+}
+
+.putih .cards .card p {
+  font-size: 23px;
+  font-weight: bolder;
+  font-style: normal;
+
+}
+
+@media (max-width: 600px) {
+  
+  .putih .icon {
+height: 80px;
+width: 80px;
+   position: absolute;
+  }
+  .isicard{
+   width: 60%;
+   margin-left: auto;
+  }
+  .putih .cards .card {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    text-align: left;
+  
+  }
+  .putih p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+  }
+
+  .putih .cards .card {
+    margin-bottom: 4rem;
+  }
+
+  .putih h2 {
+    font-size: 30px;
+  }
+
+  .putih p {
+    font-size: 18px;
+    ;
+  }
+}
+
+/* abu */
+.abu {
+  background-color: #f3f3f3;
+  padding: 4rem 0px 6rem 0px;
+  text-align: left;
+}
+
+.abu h2 {
+  color: #0d0d0d;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.abu p a {
+  color: #00A986;
+
+}
+
+.abu span {
+  font-weight: bold;
+}
+
+.abu p {
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.abu .tombol {
+  margin-top: 50px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .abu h2 {
+    font-size: 30px;
+  }
+
+  .abu p {
+    font-size: 15px;
+    ;
+  }
+
+  .abu .tombol a {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 5px 0px;
+
+}
+
+.footer p {
+  color: rgb(180, 180, 180);
+  font-size: 12px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
